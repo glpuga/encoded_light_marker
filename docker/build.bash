@@ -22,7 +22,7 @@
 DOCKERFILE_FILE="Dockerfile_20_04_foxy"
 
 
-IMAGE_NAME="dockerized_ros_devel_env"
+IMAGE_NAME="encoded_light_marker"
 
 DOCKERFILE_PATH="."
 

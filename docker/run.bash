@@ -17,7 +17,7 @@
 #
 #
 
-IMAGE_NAME="dockerized_ros_devel_env"
+IMAGE_NAME="encoded_light_marker"
 
 RUNTIME="runc"
 
