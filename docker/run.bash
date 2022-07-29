@@ -50,6 +50,7 @@ docker run -it \
   -v "/tmp/.X11-unix:/tmp/.X11-unix" \
   -v "/etc/localtime:/etc/localtime:ro" \
   -v "/dev/input:/dev/input" \
+  -v "/dev/video0:/dev/video0" \
   --network host \
   --privileged \
   --rm \

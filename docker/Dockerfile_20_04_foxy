@@ -93,16 +93,18 @@ RUN mkdir -p /home/$USER/ws/src \
 # Add extra ROS packages here
 RUN apt update \
  && apt install -y \
+    python3-argcomplete \
     python3-colcon-ros \
     python3-colcon-bash \
     python3-colcon-cmake \
+    ros-${DIST}-usb-cam \
  && apt clean
 
 # Install extra tools tools
 RUN apt update \
  && apt install -y \
     htop \
- && apt clean 
+ && apt clean
 
 # Commands below run as the developer user.
 USER $USER:$GROUP
