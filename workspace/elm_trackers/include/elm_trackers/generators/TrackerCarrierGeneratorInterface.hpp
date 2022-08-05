@@ -7,8 +7,8 @@
 #include <memory>
 
 // project
-#include <elm_trackers/ModulationState.hpp>
-#include <elm_trackers/Time.hpp>
+#include <elm_trackers/datatypes/ModulationState.hpp>
+#include <elm_trackers/datatypes/Time.hpp>
 
 namespace elm_trackers {
 

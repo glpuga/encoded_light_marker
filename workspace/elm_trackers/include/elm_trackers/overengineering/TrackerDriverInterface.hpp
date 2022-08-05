@@ -7,8 +7,8 @@
 #include <memory>
 
 // project
-#include <elm_trackers/Coordinates2D.hpp>
-#include <elm_trackers/Time.hpp>
+#include <elm_trackers/datatypes/Coordinates2D.hpp>
+#include <elm_trackers/datatypes/Time.hpp>
 
 namespace elm_trackers {
 

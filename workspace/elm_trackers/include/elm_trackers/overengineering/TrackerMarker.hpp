@@ -7,10 +7,10 @@
 #include <utility>
 
 // project
-#include <elm_trackers/TrackerCarrierGeneratorInterface.hpp>
-#include <elm_trackers/TrackerDrawerInterface.hpp>
-#include <elm_trackers/TrackerDriverInterface.hpp>
-#include <elm_trackers/TrackerMarkerInterface.hpp>
+#include <elm_trackers/generators/TrackerCarrierGeneratorInterface.hpp>
+#include <elm_trackers/overengineering/TrackerDrawerInterface.hpp>
+#include <elm_trackers/overengineering/TrackerDriverInterface.hpp>
+#include <elm_trackers/overengineering/TrackerMarkerInterface.hpp>
 
 namespace elm_trackers {
 

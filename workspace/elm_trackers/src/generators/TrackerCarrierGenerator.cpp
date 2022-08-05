@@ -5,7 +5,7 @@
 #include <math.h>
 
 // project
-#include <elm_trackers/TrackerCarrierGenerator.hpp>
+#include <elm_trackers/generators/TrackerCarrierGenerator.hpp>
 
 namespace elm_trackers {
 
