@@ -4,7 +4,7 @@
 #pragma once
 
 // project
-#include <elm_trackers/CarrierPhase.hpp>
+#include <elm_trackers/datatypes/CarrierPhase.hpp>
 
 namespace elm_trackers {
 

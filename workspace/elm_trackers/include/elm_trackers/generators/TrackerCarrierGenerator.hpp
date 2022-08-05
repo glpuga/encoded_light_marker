@@ -7,8 +7,8 @@
 #include <chrono>
 
 // project
-#include <elm_trackers/TrackerCarrierGeneratorInterface.hpp>
-#include <elm_trackers/TrackerId.hpp>
+#include <elm_trackers/generators/TrackerCarrierGeneratorInterface.hpp>
+#include <elm_trackers/datatypes/TrackerId.hpp>
 
 namespace elm_trackers {
 

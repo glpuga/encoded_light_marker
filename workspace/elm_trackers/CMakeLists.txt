@@ -18,8 +18,11 @@ endif()
 # find dependencies
 find_package(ament_cmake REQUIRED)
 
-add_library(${PROJECT_NAME} src/TrackerMarker.cpp src/ToroidalTrackerDriver.cpp
-                            src/TrackerCarrierGenerator.cpp)
+add_library(
+  ${PROJECT_NAME}
+  src/overengineering/TrackerMarker.cpp
+  src/overengineering/ToroidalTrackerDriver.cpp
+  src/generators/TrackerCarrierGenerator.cpp)
 
 target_include_directories(${PROJECT_NAME} PUBLIC include)
 

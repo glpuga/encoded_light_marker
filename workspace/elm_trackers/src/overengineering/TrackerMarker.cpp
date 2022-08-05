@@ -5,8 +5,8 @@
 #include <cmath>
 
 // project
-#include <elm_trackers/Time.hpp>
-#include <elm_trackers/TrackerMarker.hpp>
+#include <elm_trackers/datatypes/Time.hpp>
+#include <elm_trackers/overengineering/TrackerMarker.hpp>
 
 namespace elm_trackers {
 

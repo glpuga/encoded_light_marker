@@ -5,7 +5,7 @@
 #include <cmath>
 
 // project
-#include <elm_trackers/ToroidalTrackerDriver.hpp>
+#include <elm_trackers/overengineering/ToroidalTrackerDriver.hpp>
 
 namespace elm_trackers {
 
