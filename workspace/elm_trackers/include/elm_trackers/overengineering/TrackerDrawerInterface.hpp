@@ -13,7 +13,7 @@
 namespace elm_trackers {
 
 class TrackerDrawerInterface {
- public:
+public:
   using Ptr = std::unique_ptr<TrackerDrawerInterface>;
   using SharedPtr = std::shared_ptr<TrackerDrawerInterface>;
 
@@ -22,4 +22,4 @@ class TrackerDrawerInterface {
   virtual void draw(const Coordinates2D &, const ModulationState &) = 0;
 };
 
-}  // namespace elm_trackers
+} // namespace elm_trackers

@@ -6,7 +6,7 @@
 namespace elm_trackers {
 
 class TrackerMarkerFactory {
- public:
+public:
 };
 
-}  // namespace elm_trackers
+} // namespace elm_trackers

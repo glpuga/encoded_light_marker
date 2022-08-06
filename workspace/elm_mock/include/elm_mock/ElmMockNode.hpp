@@ -16,14 +16,14 @@
 
 namespace elm_mock {
 class ElmMockNode : public rclcpp::Node {
- public:
+public:
   ElmMockNode();
 
- private:
+private:
   rclcpp::Subscription<sensor_msgs::msg::Image>::SharedPtr image_input_sub_;
   rclcpp::Publisher<sensor_msgs::msg::Image>::SharedPtr image_output_pub_;
 
   void inputImageCallback(const sensor_msgs::msg::Image::SharedPtr msg);
 };
 
-}  // namespace elm_mock
+} // namespace elm_mock

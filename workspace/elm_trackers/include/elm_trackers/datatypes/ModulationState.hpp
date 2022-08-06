@@ -12,4 +12,4 @@ struct ModulationState {
   CarrierPhase carrier_phase;
 };
 
-}  // namespace elm_trackers
+} // namespace elm_trackers

@@ -13,8 +13,8 @@ TrackerCarrierGenerator::TrackerCarrierGenerator(const double rate,
                                                  const TrackerId id)
     : id_{id}, rate_{rate} {}
 
-ModulationState TrackerCarrierGenerator::evaluateModulationState(
-    const Time &curr_time) {
+ModulationState
+TrackerCarrierGenerator::evaluateModulationState(const Time &curr_time) {
   if (!initialized_) {
     initialized_ = true;
     start_time_ = curr_time;
@@ -32,4 +32,4 @@ ModulationState TrackerCarrierGenerator::evaluateModulationState(
   return modulation_state;
 }
 
-}  // namespace elm_trackers
+} // namespace elm_trackers

@@ -9,13 +9,13 @@
 namespace elm_trackers {
 
 class ToroidalTrackerDriver : public TrackerDriverInterface {
- public:
+public:
   ToroidalTrackerDriver(const size_t width, const size_t height,
                         const double orientation, const double speed);
 
   Coordinates2D evaluateCurrentPosition(const Time &curr_time) override;
 
- private:
+private:
   bool initialized_{false};
   Time latest_timestamp_;
 
@@ -28,4 +28,4 @@ class ToroidalTrackerDriver : public TrackerDriverInterface {
   double current_pose_y_;
 };
 
-}  // namespace elm_trackers
+} // namespace elm_trackers

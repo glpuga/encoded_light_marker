@@ -11,7 +11,7 @@
 namespace elm_trackers {
 
 class IQCorrelatorBufferInterface {
- public:
+public:
   using Ptr = std::unique_ptr<IQCorrelatorBufferInterface>;
 
   virtual ~IQCorrelatorBufferInterface() = default;
@@ -26,4 +26,4 @@ class IQCorrelatorBufferInterface {
   virtual Buffer2D squaredModule() const = 0;
 };
 
-}  // namespace elm_trackers
+} // namespace elm_trackers

@@ -12,7 +12,7 @@
 namespace elm_trackers {
 
 class Buffer2D {
- public:
+public:
   Buffer2D(const std::size_t width, const std::size_t height);
 
   void reset();
@@ -41,7 +41,7 @@ class Buffer2D {
   Buffer2D &operator=(const Buffer2D &) = default;
   Buffer2D &operator=(Buffer2D &&) = default;
 
- private:
+private:
   std::size_t width_;
   std::size_t height_;
 
@@ -50,4 +50,4 @@ class Buffer2D {
   bool outOfRange(const std::size_t row, const std::size_t col) const;
 };
 
-}  // namespace elm_trackers
+} // namespace elm_trackers
