@@ -15,8 +15,7 @@ TrackerMarker::TrackerMarker(
     TrackerCarrierGeneratorInterface::Ptr carrier_generator,
     TrackerDriverInterface::Ptr driver, TrackerDrawerInterface::Ptr drawer)
     : carrier_generator_{std::move(carrier_generator)},
-      driver_{std::move(driver)},
-      drawer_{std::move(drawer)} {}
+      driver_{std::move(driver)}, drawer_{std::move(drawer)} {}
 
 void TrackerMarker::draw() {
   Time curr_time;
@@ -26,4 +25,4 @@ void TrackerMarker::draw() {
   drawer_->draw(position_2d, modulation_state);
 }
 
-}  // namespace elm_trackers
+} // namespace elm_trackers

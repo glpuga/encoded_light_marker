@@ -13,4 +13,4 @@ struct Coordinates2D {
   int32_t y;
 };
 
-}  // namespace elm_trackers
+} // namespace elm_trackers

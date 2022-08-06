@@ -214,8 +214,8 @@ TEST_F(Buffer2DTests, ArrayOperations2) {
   ASSERT_DOUBLE_EQ(36.0, uut.cell(2, 1));
 }
 
-}  // namespace
+} // namespace
 
-}  // namespace test
+} // namespace test
 
-}  // namespace elm_trackers
+} // namespace elm_trackers

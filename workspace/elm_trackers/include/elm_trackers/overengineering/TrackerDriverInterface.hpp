@@ -13,7 +13,7 @@
 namespace elm_trackers {
 
 class TrackerDriverInterface {
- public:
+public:
   using Ptr = std::unique_ptr<TrackerDriverInterface>;
   using SharedPtr = std::shared_ptr<TrackerDriverInterface>;
 
@@ -22,4 +22,4 @@ class TrackerDriverInterface {
   virtual Coordinates2D evaluateCurrentPosition(const Time &curr_time) = 0;
 };
 
-}  // namespace elm_trackers
+} // namespace elm_trackers

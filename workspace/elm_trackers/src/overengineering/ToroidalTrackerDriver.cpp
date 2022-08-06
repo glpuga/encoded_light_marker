@@ -13,15 +13,12 @@ ToroidalTrackerDriver::ToroidalTrackerDriver(const size_t width,
                                              const size_t height,
                                              const double orientation,
                                              const double speed)
-    : width_{width},
-      height_{height},
-      orientation_{orientation},
-      speed_{speed},
+    : width_{width}, height_{height}, orientation_{orientation}, speed_{speed},
       current_pose_x_{static_cast<double>(width / 2)},
       current_pose_y_{static_cast<double>(height / 2)} {}
 
-Coordinates2D ToroidalTrackerDriver::evaluateCurrentPosition(
-    const Time &curr_time) {
+Coordinates2D
+ToroidalTrackerDriver::evaluateCurrentPosition(const Time &curr_time) {
   if (!initialized_) {
     initialized_ = true;
     latest_timestamp_ = curr_time;
@@ -59,4 +56,4 @@ Coordinates2D ToroidalTrackerDriver::evaluateCurrentPosition(
   return coordinates;
 }
 
-}  // namespace elm_trackers
+} // namespace elm_trackers

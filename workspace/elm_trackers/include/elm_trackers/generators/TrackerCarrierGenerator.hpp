@@ -13,7 +13,7 @@
 namespace elm_trackers {
 
 class TrackerCarrierGenerator : public TrackerCarrierGeneratorInterface {
- public:
+public:
   TrackerCarrierGenerator(const double rate)
       : TrackerCarrierGenerator(rate, TrackerId{}){};
 
@@ -21,7 +21,7 @@ class TrackerCarrierGenerator : public TrackerCarrierGeneratorInterface {
 
   ModulationState evaluateModulationState(const Time &curr_time) override;
 
- private:
+private:
   bool initialized_{false};
   Time start_time_;
 
@@ -29,4 +29,4 @@ class TrackerCarrierGenerator : public TrackerCarrierGeneratorInterface {
   double rate_;
 };
 
-}  // namespace elm_trackers
+} // namespace elm_trackers

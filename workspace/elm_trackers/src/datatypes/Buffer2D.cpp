@@ -77,4 +77,4 @@ bool Buffer2D::outOfRange(const std::size_t row, const std::size_t col) const {
   return false;
 }
 
-}  // namespace elm_trackers
+} // namespace elm_trackers

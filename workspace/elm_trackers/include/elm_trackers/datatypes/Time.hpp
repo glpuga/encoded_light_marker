@@ -9,7 +9,7 @@
 namespace elm_trackers {
 
 struct Time {
- public:
+public:
   Time() = default;
 
   Time(const std::chrono::nanoseconds &timestamp) : timestamp_{timestamp} {}
@@ -20,8 +20,8 @@ struct Time {
 
   std::chrono::nanoseconds::rep ns() const { return timestamp_.count(); }
 
- private:
+private:
   std::chrono::nanoseconds timestamp_;
 };
 
-}  // namespace elm_trackers
+} // namespace elm_trackers

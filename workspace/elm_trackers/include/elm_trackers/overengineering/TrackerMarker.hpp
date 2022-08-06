@@ -15,17 +15,17 @@
 namespace elm_trackers {
 
 class TrackerMarker : public TrackerMarkerInterface {
- public:
+public:
   TrackerMarker(TrackerCarrierGeneratorInterface::Ptr carrier_generator,
                 TrackerDriverInterface::Ptr driver,
                 TrackerDrawerInterface::Ptr drawer);
 
   void draw();
 
- private:
+private:
   TrackerCarrierGeneratorInterface::Ptr carrier_generator_;
   TrackerDriverInterface::Ptr driver_;
   TrackerDrawerInterface::Ptr drawer_;
 };
 
-}  // namespace elm_trackers
+} // namespace elm_trackers

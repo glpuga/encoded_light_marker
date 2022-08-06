@@ -9,4 +9,4 @@ struct CarrierPhase {
   double phi;
 };
 
-}  // namespace elm_trackers
+} // namespace elm_trackers

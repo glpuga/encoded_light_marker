@@ -20,4 +20,4 @@ void ElmMockNode::inputImageCallback(
   image_output_pub_->publish(*msg);
 }
 
-}  // namespace elm_mock
+} // namespace elm_mock

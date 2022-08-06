@@ -15,8 +15,7 @@ IQCorrelatorBuffer::IQCorrelatorBuffer(
     const std::size_t width, const std::size_t height,
     TrackerCarrierGeneratorInterface::Ptr generator)
     : accumulator_buffer_i_{width, height},
-      accumulator_buffer_q_{width, height},
-      generator_{std::move(generator)} {}
+      accumulator_buffer_q_{width, height}, generator_{std::move(generator)} {}
 
 void IQCorrelatorBuffer::reset() {
   accumulator_buffer_i_.reset();
@@ -64,4 +63,4 @@ Buffer2D IQCorrelatorBuffer::squaredModule() const {
   return squared_module_i;
 }
 
-}  // namespace elm_trackers
+} // namespace elm_trackers

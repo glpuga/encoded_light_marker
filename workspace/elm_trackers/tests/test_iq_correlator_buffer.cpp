@@ -92,8 +92,8 @@ TEST_F(IQCorrelatorBufferTests, ConstructionTest) {
   }
 }
 
-}  // namespace
+} // namespace
 
-}  // namespace test
+} // namespace test
 
-}  // namespace elm_trackers
+} // namespace elm_trackers

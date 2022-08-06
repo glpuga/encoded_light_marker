@@ -6,10 +6,10 @@
 namespace elm_trackers {
 
 class TrackerMarkerInterface {
- public:
+public:
   virtual ~TrackerMarkerInterface() = default;
 
   virtual void draw() = 0;
 };
 
-}  // namespace elm_trackers
+} // namespace elm_trackers

@@ -10,7 +10,7 @@
 namespace elm_trackers {
 
 class IQCorrelatorBuffer : public IQCorrelatorBufferInterface {
- public:
+public:
   IQCorrelatorBuffer(const std::size_t width, const std::size_t height,
                      TrackerCarrierGeneratorInterface::Ptr generator);
 
@@ -23,10 +23,10 @@ class IQCorrelatorBuffer : public IQCorrelatorBufferInterface {
 
   Buffer2D squaredModule() const override;
 
- private:
+private:
   Buffer2D accumulator_buffer_i_;
   Buffer2D accumulator_buffer_q_;
   TrackerCarrierGeneratorInterface::Ptr generator_;
 };
 
-}  // namespace elm_trackers
+} // namespace elm_trackers

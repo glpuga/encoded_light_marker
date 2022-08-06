@@ -10,15 +10,15 @@
 namespace elm_trackers {
 
 class TrackerId {
- public:
+public:
   TrackerId() = default;
 
   TrackerId(const size_t id) : id_{id} {}
 
   size_t id() const { return id_; }
 
- private:
+private:
   size_t id_{0};
 };
 
-}  // namespace elm_trackers
+} // namespace elm_trackers

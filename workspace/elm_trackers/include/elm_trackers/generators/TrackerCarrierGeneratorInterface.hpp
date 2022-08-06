@@ -13,7 +13,7 @@
 namespace elm_trackers {
 
 class TrackerCarrierGeneratorInterface {
- public:
+public:
   using Ptr = std::unique_ptr<TrackerCarrierGeneratorInterface>;
   using SharedPtr = std::shared_ptr<TrackerCarrierGeneratorInterface>;
 
@@ -22,4 +22,4 @@ class TrackerCarrierGeneratorInterface {
   virtual ModulationState evaluateModulationState(const Time &curr_time) = 0;
 };
 
-}  // namespace elm_trackers
+} // namespace elm_trackers
