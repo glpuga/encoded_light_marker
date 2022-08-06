@@ -55,6 +55,21 @@ Buffer2D &Buffer2D::operator/=(const double rhs) {
   return *this;
 }
 
+Buffer2D &Buffer2D::operator+=(const Buffer2D &rhs) {
+  buffer_ += rhs.buffer();
+  return *this;
+}
+
+Buffer2D &Buffer2D::operator-=(const Buffer2D &rhs) {
+  buffer_ -= rhs.buffer();
+  return *this;
+}
+
+Buffer2D &Buffer2D::operator*=(const Buffer2D &rhs) {
+  buffer_.array() *= rhs.buffer().array();
+  return *this;
+}
+
 bool Buffer2D::outOfRange(const std::size_t row, const std::size_t col) const {
   if ((row >= height_) || (col >= width_)) {
     return true;

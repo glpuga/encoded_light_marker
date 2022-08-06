@@ -9,8 +9,8 @@
 
 namespace elm_trackers {
 
-TrackerCarrierGenerator::TrackerCarrierGenerator(const TrackerId id,
-                                                 const double rate)
+TrackerCarrierGenerator::TrackerCarrierGenerator(const double rate,
+                                                 const TrackerId id)
     : id_{id}, rate_{rate} {}
 
 ModulationState TrackerCarrierGenerator::evaluateModulationState(

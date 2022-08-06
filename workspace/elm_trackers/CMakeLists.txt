@@ -21,6 +21,7 @@ find_package(Eigen3 REQUIRED)
 
 add_library(
   ${PROJECT_NAME}
+  src/correlator/IQCorrelatorBuffer.cpp
   src/datatypes/Buffer2D.cpp src/generators/TrackerCarrierGenerator.cpp
   src/overengineering/TrackerMarker.cpp
   src/overengineering/ToroidalTrackerDriver.cpp)
@@ -37,12 +38,15 @@ if(BUILD_TESTING)
   # ament_lint_auto_find_test_dependencies()
 
   find_package(ament_cmake_gtest)
-  set(test_target_name ${PROJECT_NAME}-tests)
 
-  file(GLOB slow_test_files_list tests/test_*.cpp)
-  ament_add_gtest(${test_target_name} ${slow_test_files_list})
-  target_link_libraries(${test_target_name} ${PROJECT_NAME})
+  file(GLOB test_files_list tests/test_*.cpp)
 
+  foreach(filepath ${test_files_list})
+    get_filename_component(basename ${filepath} NAME)
+    set(test_target_name ${basename}-tests)
+    ament_add_gtest(${test_target_name} ${filepath})
+    target_link_libraries(${test_target_name} ${PROJECT_NAME})
+  endforeach()
 endif()
 
 ament_package()
