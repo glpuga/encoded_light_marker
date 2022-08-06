@@ -32,6 +32,10 @@ class Buffer2D {
   Buffer2D &operator*=(const double rhs);
   Buffer2D &operator/=(const double rhs);
 
+  Buffer2D &operator+=(const Buffer2D &rhs);
+  Buffer2D &operator-=(const Buffer2D &rhs);
+  Buffer2D &operator*=(const Buffer2D &rhs);
+
   Buffer2D(const Buffer2D &) = default;
   Buffer2D(Buffer2D &&) = default;
   Buffer2D &operator=(const Buffer2D &) = default;

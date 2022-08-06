@@ -14,7 +14,10 @@ namespace elm_trackers {
 
 class TrackerCarrierGenerator : public TrackerCarrierGeneratorInterface {
  public:
-  TrackerCarrierGenerator(const TrackerId id, const double rate);
+  TrackerCarrierGenerator(const double rate)
+      : TrackerCarrierGenerator(rate, TrackerId{}){};
+
+  TrackerCarrierGenerator(const double rate, const TrackerId id);
 
   ModulationState evaluateModulationState(const Time &curr_time) override;
 
